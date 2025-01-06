@@ -32,7 +32,7 @@ namespace PersistanceLayer.Configurations
         //        CreatedDate = DateTime.Now,
         //    };
         //    Category par1 = new()
-        //    {
+        //    {asd
         //        Id = 3,
         //        Name = "Bilgisayar",
         //        Priorty = 1,
