@@ -1,4 +1,6 @@
 using PersistanceLayer;
+using ApplicationLayer;
+using MapperLayer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,8 @@ builder.Configuration
     .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional:true);
 // build etmeden önce profillerden enviroment nesnesini al.
 builder.Services.AddPersistance(builder.Configuration);
+builder.Services.AddApplication();
+builder.Services.AddCustom();
 
 var app = builder.Build();
 

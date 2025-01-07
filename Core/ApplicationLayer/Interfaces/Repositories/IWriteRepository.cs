@@ -14,5 +14,6 @@ namespace ApplicationLayer.Interfaces.Repositories
         Task<T> UpdateAsync(T entity);
         Task SoftDeleteAsync(T entity);
         Task HardDeleteAsync(T entity);
+        Task HardDeleteAsyncRange(IList<T> entity);
     }
 }
