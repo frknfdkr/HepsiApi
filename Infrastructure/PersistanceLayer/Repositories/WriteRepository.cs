@@ -43,5 +43,9 @@ namespace PersistanceLayer.Repositories
         {
             await Task.Run(() => Table.Remove(entity));            
         }
+        public async Task HardDeleteAsyncRange(IList<T> entity)
+        {
+            await Task.Run(() => Table.RemoveRange(entity));
+        }
     }
 }
