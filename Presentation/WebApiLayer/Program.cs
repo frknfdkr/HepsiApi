@@ -1,6 +1,7 @@
 using PersistanceLayer;
 using ApplicationLayer;
 using MapperLayer;
+using ApplicationLayer.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.ConfigureExceptionHandlingMiddleware();
 app.UseAuthorization();
 
 app.MapControllers();
