@@ -31,8 +31,7 @@ namespace ApplicationLayer.Exceptions
 
             List<string> erorrs = new()
             {
-                exception.Message,
-                exception.InnerException?.ToString()
+                exception.Message                
             };
 
             return httpContext.Response.WriteAsync(new ExceptionModel
