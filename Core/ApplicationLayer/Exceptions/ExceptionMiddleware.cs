@@ -45,9 +45,8 @@ namespace ApplicationLayer.Exceptions
         private static int GetStatusCode(Exception exception) => exception switch
         {
             BadRequestException => StatusCodes.Status400BadRequest,
-            NotFoundException => StatusCodes.Status404NotFound,
-            ValidationException => StatusCodes.Status422UnprocessableEntity,
-            => StatusCodes.Status500InternalServerError
+            NotFoundException => StatusCodes.Status404NotFound
+           // ValidationException => StatusCodes.Status422UnprocessableEntity => StatusCodes.Status500InternalServerError
         };
     }
 }

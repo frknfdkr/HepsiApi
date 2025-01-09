@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationLayer.Exceptions
 {
-    public class ExceptionModel :ErrorStatusCode
+    public class ExceptionModel : ErrorStatusCode
     {
         public IEnumerable<string> Errors { get; set; }
 
@@ -20,4 +20,5 @@ namespace ApplicationLayer.Exceptions
     public class ErrorStatusCode
     {
         public int StatusCode { get; set; }
+    }
 }
