@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\InfrastuctureLayer\InfrastuctureLayer.csproj" />
     <ProjectReference Include="..\..\Infrastructure\PersistanceLayer\PersistanceLayer.csproj" />
     <ProjectReference Include="..\..\MapperLayer\MapperLayer.csproj" />
   </ItemGroup>
